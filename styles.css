@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Cambiado a min-height para evitar problemas en dispositivos pequeños */
+  background-color: #00b5fd;
+}
+
+.contenedor {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  width: 30%; /* Ajustado a 30% para PCs */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #d12ce0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto; /* Centrado horizontalmente */
+}
+
+@media only screen and (max-width: 767px) {
+  img {
+      width: 90%; /* Cambiado a 100% para dispositivos pequeños (celulares) */
+  }
+
+  button {
+      display: block;
+      margin: 10px auto 0; /* Ajustado el margen para centrar y agregar espacio entre la imagen y el botón en dispositivos pequeños */
+  }
+}
